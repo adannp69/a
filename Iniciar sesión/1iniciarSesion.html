@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1estilos.css">
+    <title>Iniciar sesión</title>
+</head>
+
+
+<body>
+
+    <form class="gridLayout estructura" method="post">
+
+        <section class="grid-nested c1">
+            <h4>INICIAR SESIÓN</h4>
+        </section>
+
+        <section class="grid-nested c1">
+            <input  class=         "inputDatos"  
+                    type=           "email" 
+                    id=             "correo" 
+                    name=           "correo" 
+                    placeholder=    "Ingresa tu email"  
+                    pattern=        "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                    title=          "Ingresa tu correo electrónico"
+                    required> 
+        </section>
+
+        <section class="grid-nested c1">
+            <input  class=          "inputDatos" 
+                    type=           "password" 
+                    id=             "contrasenia" 
+                    name=           "contrasenia" 
+                    pattern=        "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    placeholder=    "Ingresa tu contraseña"
+                    title=          "Ingresa tu contraseña"     
+                    required>
+        </section>
+
+        <section class="grid-nested c1 centrarBoton">
+            <input class=           "botonEnviar hoverable" 
+                    type=           "submit" 
+                    value=          "Enviar">
+        </section>
+        
+        <section class="grid-nested c2 caja">
+            <a href="crearCuenta.html">Crear cuenta</a>
+        </section>
+
+        <section class="grid-nested c3 caja">
+            <a href="recuperarCuenta.html">Recuperar cuenta</a>
+        </section>
+
+    </form>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

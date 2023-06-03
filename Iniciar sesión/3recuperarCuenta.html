@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="3estilosrecuperarCuenta.css">
+</head>
+
+<body>
+    <form class="estructura contenedorGrid" method="post"> 
+
+        <h4 class="nested-grid"> RECUPERA TU CUENTA </h4>
+
+        <section class="nested-grid caja">
+            <p>Ingresa tu correo de recuperación.</p>
+        </section>
+
+        <section class="nested-grid">
+            <input  class=          "inputDatos"  
+                    type=           "email" 
+                    id=             "correo"
+                    name=           "correo" 
+                    placeholder=    "Ingresa tu email" 
+                    pattern=        "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                    required>
+        </section>
+
+        <section class="nested-grid centrarBoton">
+            <input  class=          "botonEnviar hoverable" 
+                    type=           "submit" 
+                    value=          "Enviar">
+        </section>
+    </form>
+</body>
+</html>

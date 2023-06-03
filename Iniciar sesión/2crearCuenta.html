@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2estilosCrearCuenta.css">
+    <title>Crear cuenta</title>
+</head>
+
+<body>
+
+    <form class="gridLayout estructura" method="post">
+
+        <section class="grid-nested c1">
+            <h4>CREA UNA CUENTA</h4>
+        </section>
+
+        <section class="grid-nested c1 caja">
+            <p>Completa los datos que se te solicitan.</p>
+        </section>
+
+        <div class="gridNestedNested c1"> <!--NOMBRE(S) Y APELLIDOS-->
+
+            <section class="grid-nested"><!--NOMBRE(S) -->   
+                <input  class=             "inputDatos"
+                        type=           "text" 
+                        id=             "nombre"
+                        name=           "nombre"
+                        placeholder=    "Nombre(s)"
+                        pattern=        "^(?!.*([a-zA-Z])\1\1)[A-Za-z]{3,10}(\s[a-zA-Z]{3,10})?"
+                        title=          "Introduce tu(s) nombre(s)"
+                        maxlength=      "20"
+                        required> 
+            </section>
+
+            <section class="grid-nested"><!--APELLIDO PATERNO-->
+                <input  class=          "inputDatos" 
+                        type=           "text" 
+                        id=             "apellidoPaterno" 
+                        name=           "apellidoPaterno" 
+                        placeholder=    "Apellido Paterno"
+                        pattern=        "^(?!.*([a-zA-Z])\1\1)[A-Za-z]{3,10}"
+                        title=          "Introduce tu apellido paterno"
+                        maxlength=      "20"
+                        required>                    
+            </section>
+
+            <section class="grid-nested"><!--APELLIDO MATERNO-->
+                <input  class=          "inputDatos" 
+                        type=           "text" 
+                        id=             "apellidoMaterno" 
+                        name=           "apellidoMaterno" 
+                        placeholder=    "Apellido Materno"
+                        pattern=        "^(?!.*([a-zA-Z])\1\1)[A-Za-z]{3,10}"
+                        title=          "Introduce tu apellido materno"
+                        maxlength=      "20"
+                        required> 
+            </section>
+        </div> <!--FIN DE NOMBRE(S) Y APELLIDOS-->
+
+        <section class="grid-nested c1">
+            <input      class=          "inputDatos"  
+                        type=           "email" 
+                        id=             "correo" 
+                        name=           "correo" 
+                        placeholder=    "Ingresa tu email"
+                        pattern=        "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                        title=          "Ingresa tu correo electrónico" 
+                        required> 
+        </section>
+    
+        <section class="grid-nested c2">
+            <input      class=          "inputDatos" 
+                        type=           "password" 
+                        id=             "contrasenia1" 
+                        name=           "contrasenia1"  
+                        placeholder=    "Contraseña nueva"             
+                        pattern=        "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title=          "Ingresa una contraseña mayor a 8 carácteres con mínimo 1 mayúscula y 1 número"
+                        required>
+        </section>
+
+        <section class="grid-nested c3">
+            <input      class=          "inputDatos" 
+                        type=           "password" 
+                        id=             "contrasenia2" 
+                        name=           "contrasenia2"  
+                        placeholder=    "Confirma tu contraseña"             
+                        pattern=        "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title=          "Confirma tu contraseña"
+                        required>
+        </section>
+
+        <section class="grid-nested c2">
+            <input      class=          "inputDatos" 
+                        type=           "date" 
+                        id=             "fecha" 
+                        name=           "fecha" 
+                        required> 
+        </section>
+
+        <!--
+        <section class="grid-nested c3">
+            <div class="caja">              
+                <input  type="radio" name="gender" id="hombre" required> Hombre
+                <input  type="radio" name="gender" id="mujer" required> Mujer
+            </div>
+        </section>
+        -->
+        <section class="grid-nested c1 centrarBoton">
+            <input      class=          "botonEnviar hoverable" 
+                        type=           "submit" 
+                        value=          "Enviar">
+        </section>
+
+    </form>
+
+</body>
+</html>
